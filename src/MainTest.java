@@ -9,7 +9,7 @@ class  MainTest {
         assertEquals(false, Main.parenthesesCheck("("));
         assertEquals(true, Main.parenthesesCheck("(())((()())())"));
     }
-
+ 
     @org.junit.jupiter.api.Test
     void reverseInteger() {
         assertEquals("4321", Main.reverseInteger(1234));
