@@ -29,7 +29,7 @@ public class Main {
         String[] words = input.split(" ");
         String output = "";
         for (String word : words) {output = output + encryptWord(word) + " ";}
-        return output;
+        return output.substring(0, output.length() - 1);
     }
 
     public static String encryptWord(String input) {
@@ -46,7 +46,7 @@ public class Main {
         String[] words = input.split(" ");
         String output = "";
         for (String word : words) {output = output + decipherWord(word) + " ";}
-        return output;
+        return output.substring(0, output.length() - 1);
     }
 
     public static String decipherWord(String input) {
